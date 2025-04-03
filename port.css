@@ -5,19 +5,9 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
-
-
-
-
 html { 
     scroll-behavior: smooth;
 }
-
-
-
-
-
 
 :root {
     --preto: #000000;
@@ -27,22 +17,10 @@ html {
     --rosa: #db7090e7;
 }
 
-
-
-
-
-
-
 body {
     background-color: rgba(71, 67, 70, 0.719);
     color: var(--branco);
 }
-
-
-
-
-
-
 
 .navegacao {
     position: fixed;
@@ -54,22 +32,12 @@ body {
     text-shadow: 0 0 10px var(--preto);
 }
 
-
-
-
-
-
 .menu {
     display: flex;
     list-style: none;
     gap: 4rem;
     justify-content: center;
 }
-
-
-
-
-
 
 .itens {
     text-decoration: none;
@@ -90,21 +58,9 @@ body {
     transition: width 0.4s ease;
 }
 
-
 .itens:hover::after {
     width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .inicio {
     min-height: 110vh;
@@ -127,13 +83,10 @@ body {
     0%, 100% {
         transform: translateY(0);
     }
-
-50% {
-    transform: translateY(-10px);
+    50% {
+        transform: translateY(-10px);
+    }
 }
-
-}
-
 
 #IasminLuise {
     color: var(--branco);
@@ -147,18 +100,6 @@ body {
     font-weight: lighter;
     text-shadow: 0 0 10px var(--preto);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 #aba-biografia {
     padding:  12rem 3rem;
@@ -184,26 +125,13 @@ body {
 }
 
 .paragrafo-biografia {
- text-align: center;
- font-size: 1rem;
- text-shadow: 0 0 10px var(--preto);
+    text-align: center;
+    font-size: 1rem;
+    text-shadow: 0 0 10px var(--preto);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #aba-especialidades {
-padding: 10rem 2rem;
+    padding: 10rem 2rem;
 }
 
 #titulo-especialidades {
@@ -213,16 +141,16 @@ padding: 10rem 2rem;
     font-weight: bold;
     font-size: 2.5rem;
     margin: 20px;
-    }
+}
 
 .caixa-especialidades {
-display: flex;
-align-items: center;
-justify-content: space-around;
-align-content: space-around;
-gap: 4rem;
-max-width: 1400px;
-margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    gap: 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .caixa-esp {
@@ -259,14 +187,6 @@ margin: 0 auto;
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
 .aba-contato {
     padding: 6rem 2rem;
 }
@@ -288,18 +208,17 @@ margin: 0 auto;
     padding: 2rem;
     border: 1px solid var(--branco);
     border-radius: 16px;
-    
 }
 
 .form {
-margin-bottom: 1.5rem;
-width: 100%;
-padding: 1rem;
-background-color: rgba(255,255,255, 0.2);
-border-radius: 8px;
-border: 10px var(--branco);
-color: var(--preto);
-outline: none;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(255,255,255, 0.2);
+    border-radius: 8px;
+    border: 10px var(--branco);
+    color: var(--preto);
+    outline: none;
 }
 
 .nome-form {
@@ -316,7 +235,6 @@ outline: none;
     padding: 1rem 2rem;
 }
 
-
 .botao-form {
     color: rgb(44, 34, 34);
     text-shadow: 0 0 5px var(--branco);
@@ -327,11 +245,178 @@ outline: none;
     cursor: pointer;
     font-weight: bold;
     width: 100%;
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
 }
 
 .botao-form:hover {
     transform: translateY(-4px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 1024px) {
+    .menu {
+        gap: 2rem;
+    }
+
+    .caixa-especialidades {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .perfil-inicio {
+        width: 250px;
+        height: 250px;
+    }
+
+    #IasminLuise {
+        font-size: 2.5rem;
+    }
+
+    #Auxiliar {
+        font-size: 1rem;
+    }
+
+    .caixa-biografia {
+        padding: 1rem;
+    }
+
+    #titulo-biografia {
+        font-size: 2rem;
+    }
+
+    .paragrafo-biografia {
+        font-size: 0.9rem;
+    }
+
+    .paragrafo-esp {
+        font-size: 0.9rem;
+    }
+
+    #titulo-especialidades {
+        font-size: 2rem;
+    }
+
+    .caixa-esp {
+        width: 100%;
+    }
+
+    #titulo-contato {
+        font-size: 2rem;
+    }
+
+    .formulario {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navegacao {
+        padding: 1rem;
+    }
+
+    .perfil-inicio {
+        width: 200px;
+        height: 200px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #IasminLuise {
+        font-size: 2rem;
+    }
+
+    #Auxiliar {
+        font-size: 1rem;
+    }
+
+    .caixa-biografia {
+        padding: 1rem;
+        width: 90%;
+    }
+
+    #titulo-biografia {
+        font-size: 1.8rem;
+    }
+
+    .paragrafo-biografia {
+        font-size: 0.85rem;
+    }
+
+    #titulo-especialidades {
+        font-size: 1.8rem;
+    }
+
+    .caixa-especialidades {
+        gap: 1rem;
+    }
+
+    .caixa-esp {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .formulario {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .botao-form {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .perfil-inicio {
+        width: 150px;
+        height: 150px;
+    }
+
+    #IasminLuise {
+        font-size: 1.5rem;
+    }
+
+    .menu {
+        gap: 1rem;
+    }
+
+    .caixa-biografia {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    #titulo-biografia {
+        font-size: 1.6rem;
+    }
+
+    .paragrafo-biografia {
+        font-size: 0.8rem;
+    }
+
+    #titulo-especialidades {
+        font-size: 1.6rem;
+    }
+
+    .caixa-especialidades {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .caixa-esp {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .botao-form {
+        padding: 0.8rem;
+    }
 }
 
