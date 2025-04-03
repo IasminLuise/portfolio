@@ -115,8 +115,8 @@ body {
 }
 
 .perfil-inicio {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     box-shadow: 0 0 20px var(--preto);
     border-radius: 50%;
     border: 2px solid var(--branco);
