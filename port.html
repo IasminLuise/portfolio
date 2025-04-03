@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iasmin Luise</title>
+
+    <link rel="stylesheet" href="port.css">
+
+</head>
+<body>
+
+<header>
+
+<!--NAVEGAÇÃO-->
+
+<nav class="navegacao">
+        <ul class="menu">
+        <li><a href="#inicio" class="itens">INICIO</a></li>
+       <li><a href="#aba-biografia" class="itens">BIOGRAFIA</a></li>
+       <li><a href="#aba-especialidades" class="itens">ESPECIALIDADES</a></li>
+       <li><a href="#aba-contato" class="itens">CONTATO</a></li>
+        </ul>
+</nav>
+
+
+<main id="inicio" class="inicio">
+     <img class="perfil-inicio" src="/imagens/perfil.profissional.jpg" alt="perfil-inicio">
+     <h1 id="IasminLuise">Iasmin Luise</h1>
+     <h3 id="Auxiliar">Auxiliar Administrativo</h3>
+</main>
+</header>
+
+
+<!--BIOGRAFIA-->
+
+<section id="aba-biografia">
+    
+    <h1 id="titulo-biografia">BIOGRAFIA</h1>
+
+<div class="caixa-biografia">
+    
+    <p class="paragrafo-biografia">É um prazer te ver por aqui! Eu me chamo Iasmin Luise e tenho 22 anos, Graduanda em 𝐂𝐢𝐞̂𝐧𝐜𝐢𝐚 𝐝𝐚 𝐂𝐨𝐦𝐩𝐮𝐭𝐚𝐜̧𝐚̃𝐨, também sou apta para conexões atreladas ao 𝐢𝐧𝐠𝐥𝐞̂𝐬 𝐩𝐫𝐞́-𝐢𝐧𝐭𝐞𝐫𝐦𝐞𝐝𝐢𝐚́𝐫𝐢𝐨. Além disso, Trabalho há mais de 3 anos no setor 𝐚𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐭𝐢𝐯𝐨 em um provedor de internet. 
+    </p>
+
+</div>
+
+</section>
+
+
+<!--ESPECIALIDADES-->
+
+<section class="aba-especialidades" id="aba-especialidades">
+
+<h2 id="titulo-especialidades" >ESPECIALIDADES</h2>
+
+<div class="caixa-especialidades">
+
+
+        <div class="caixa-esp">
+            <h3 class="titulo-esp">SUPERVISÃO</h3>
+            <p class="paragrafo-esp">Atuo à mais de 3 anos na empresa <br> INOVA TELECOM INFORMATICA LTDA <br> como auxiliar administrativo e supervisora das ordens de serviço, sendo o setor principal do provedor de acesso da região São Francisco do Conde, Bahia.</p>
+        </div>    
+
+
+
+
+<div class="caixa-especialidades">
+        <div class="caixa-esp">
+            <h3 class="titulo-esp" >ADMINISTRAÇÃO</h3>
+            <p class="paragrafo-esp" >Certificada através da empresa <br> UDI CURSO PROFISSIONALIZANTE <br> com 100% de aproveitamento do curso de administração e financeiro, obtendo a carga horária ministrada de 40 horas, com a finalidade de aprimorar os meus serviços dministrativos.</p>
+        </div>    
+</div>    
+
+
+
+<div class="caixa-especialidades">
+        <div class="caixa-esp">
+            <h3 class="titulo-esp" >INGLÊS</h3>
+            <p class="paragrafo-esp" >Certificada através da empresa <br> SENDE LAMAS ENGLISH SCHOOL <br> com 100% de aproveitamento do curso de língua inglesa, obtendo carga horária de 32 horas, pelos resultados obtidos no Programa de Inglês - Conversação Pré -intermediário 1.</p>
+            <img class="img-esp">
+        </div>    
+</div>
+
+
+</div>
+</section>
+
+
+<!--CONTATO-->
+
+<section class="aba-contato" id="aba-contato">
+
+    <h2 id="titulo-contato" >ENTRE EM CONTATO</h2>
+
+    <form class="formulario"  onsubmit="enviarmensagem(event)" >
+        <div class="form" id="form1">
+            <input  class="nome-form" id="nome-msg"  placeholder="Nome" required>
+        </div>    
+        <div class="form" id="form2">
+            <textarea class="text-form" id="text-msg" placeholder="Digite sua Mensagem" required></textarea>
+        </div>
+
+        <button type="submit" class="botao-form">ENVIAR MENSAGEM</button>
+
+    </form>
+
+</section>
+
+<script>
+
+function enviarmensagem(event) {
+    event.preventDefault()
+        
+    const nome = document.getElementById('nome-msg').value;
+    const mensagem = document.getElementById('text-msg').value;
+    const telefone = '5571986319811';
+
+    const texto = `Olá Iasmin! Eu me chamo ${nome-msg}, ${text-msg}`
+
+    const msgformatada = encodeURIComponent (texto)
+
+    const url = `https://api.whatsapp.com/send?phone=${telefone}&text= ${msgformatada}`
+
+    window.open(url, '_blank')
+
+}
+
+</script>
+
+</body>
+</html>
