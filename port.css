@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: largue;
 }
 
 html { 
@@ -127,7 +126,7 @@ body {
 
 .paragrafo-biografia {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
     text-shadow: 0 0 10px var(--preto);
 }
 
